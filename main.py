@@ -1,7 +1,7 @@
 #Tarefa 1
 from pathlib import Path
 import mysql.connector
-db_connection = mysql.connector.connect(host="localhost", user="root", passwd="mast26@98", database="fiotech_email")
+db_connection = mysql.connector.connect(host="localhost", user="root", passwd="", database="fiotech_email")
 cursor = db_connection.cursor()
 cursor.execute("delete from arquivo_email;")
 db_connection.commit()
